@@ -74,8 +74,8 @@ Manually command:
 
 When use pip3 use below:
 ------------------------
-`odoo_import_thread.py -c myconfig.conf --file test.csv --model=account.move --encoding=utf-8 --worker 3 --size 100  --ignore="Item No_","Taxable","Tax","Total" --sep=" " --o2m`
+`odoo_import_thread.py -c myconfig.conf --file account_move.csv --model=account.move --encoding=utf-8 --worker 3 --size 100  --ignore="Item No_","Taxable","Tax","Total" --sep=" " --o2m`
 
 When using git repo use:
 ------------------------
-`python3 odoo_import_thread.py -c myconfig.conf --file test.csv --model=account.move --encoding=utf-8 --worker 3 --size 100  --ignore="Item No_","Taxable","Tax","Total" --sep=" " --o2m`
+`python3 odoo_import_thread.py -c myconfig.conf --file account_move.csv --model=account.move --encoding=utf-8 --worker 3 --size 100  --ignore="Item No_","Taxable","Tax","Total" --sep=" " --o2m`
