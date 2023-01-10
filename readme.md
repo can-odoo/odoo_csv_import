@@ -5,14 +5,16 @@ pip3 install odoo_import_export_client
 
 // create myconfig.conf file that contains
 ---------------------------------
-`[Connection]
+```
+[Connection]
 hostname = database_name.odoo.com
 database = database_name
 login = user_id
 password = user_idpassword
 protocol = xmlrpcs
 port = 443
-uid = 2`
+uid = 2
+```
 
 // import data file_type
 ------------------------
@@ -32,12 +34,12 @@ where fields are one2many their header should be, line_ids/field1
 
 // Linux User run .sh file
 --------------------------
-sh import_csv.sh
+`sh import_csv.sh`
 
 
 // Windows User run .py file
 ----------------------------
-python3 import_csv.py
+`python3 import_csv.py`
 
 ---:ENJOY:---
 
