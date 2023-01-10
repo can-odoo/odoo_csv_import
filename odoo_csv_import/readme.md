@@ -5,14 +5,14 @@ pip3 install odoo_import_export_client
 
 // create myconfig.conf file that contains
 ---------------------------------
-[Connection]
+`[Connection]
 hostname = database_name.odoo.com
 database = database_name
 login = user_id
-password = password
+password = user_idpassword
 protocol = xmlrpcs
 port = 443
-uid = 2
+uid = 2`
 
 // import data file_type
 ------------------------
@@ -71,8 +71,8 @@ Manually command:
 
 When use pip3 use below:
 ------------------------
-odoo_import_thread.py -c myconfig.conf --file test.csv --model=account.move --encoding=utf-8 --worker 3 --size 100  --ignore="Item No_","Taxable","Tax","Total" --sep=" " --o2m
+`odoo_import_thread.py -c myconfig.conf --file test.csv --model=account.move --encoding=utf-8 --worker 3 --size 100  --ignore="Item No_","Taxable","Tax","Total" --sep=" " --o2m`
 
 When using git repo use:
 ------------------------
-python3 odoo_import_thread.py -c myconfig.conf --file test.csv --model=account.move --encoding=utf-8 --worker 3 --size 100  --ignore="Item No_","Taxable","Tax","Total" --sep=" " --o2m
+`python3 odoo_import_thread.py -c myconfig.conf --file test.csv --model=account.move --encoding=utf-8 --worker 3 --size 100  --ignore="Item No_","Taxable","Tax","Total" --sep=" " --o2m`
