@@ -26,11 +26,11 @@ if possible make sure file_name should be `account_move.csv`
 
 // account_move.csv
 -------------------
-Date format should be yyyy-mm-dd
-invoice_line_ids/tax_ids/id
-CSV header file must contain id column which contains unique xmlid, also use technical name of the fields,
-you can field technical name by activating Odoo developer mode and hover over particular field,
-where fields are one2many their header should be, line_ids/field1
+Date format should be yyyy-mm-dd, 
+invoice_line_ids/tax_ids/id, 
+CSV header file must contain id column which contains unique xmlid, also use technical name of the fields, 
+you can field technical name by activating Odoo developer mode and hover over particular field, 
+where fields are one2many their header should be, line_ids/field1.
 
 // Linux User run .sh file
 --------------------------
@@ -48,6 +48,7 @@ where fields are one2many their header should be, line_ids/field1
 =========
 technical field names
 ---------------------
+```
 id
 partner_id/id
 invoice_date
@@ -66,7 +67,7 @@ invoice_cash_rounding_id Taxable
 Tax
 Total
 move_type
-
+```
 
 Manually command:
 =================
